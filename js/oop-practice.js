@@ -57,17 +57,44 @@ class Animal {
 
 // STEP 6.	Use a for-in loop to loop through and display all of the properties in the Animal class. You should see a total of 5 properties displayed in a list within the console window.
 
-// NEED TO WORK ON MORE
+// const Animal = {
+//    name : 'Ruby',
+//    breed: 'Maltipoo',
+//    age : ' 12 years old',
+//    color: 'White',
+//    Weight: '10pounds'
+// };
 
-const Dog = newDog{color: 'tan', breed: 'terrier', height: 'short', length: 'long', species: 'dog'};
-let txt = "";
-for (let x in Dog) {
-  txt += Dog[x] + " ";
-}
-console.log(Dog);
+// //iterate over the object
+// for(const key in Animal) {
+//    if (Animal.hasOwnProperty(key)) {
+//    console.log(`${key}: ${Animal[key]}`);
+//    }
+// }
+
+
 
 
 // STEP 7.	Now, create a public method called speak. Within the speak method you will use a conditional to check the type of Animal being created. If it’s a dog, return “The <color> dog is barking!” If it’s a cat return “The <color> cat is meowing!” instead. Call that method after the Animal class has been instantiated.
+
+class Animal {
+    constructor(name, type, color) {
+      this._type = type;
+      this._color = color;
+    }
+    get type() { return this._type}
+    set type(newType) { this._type = newType}
+    get color() { return this._color}
+    set color(newColor) { this._color = newColor}
+    bark = () => {
+        console.log (`The dog is barking!` )
+}
+}  
+  const animal1 = new Animal(`Dog`, `Malti`);
+  console.log (`The ${this._color}  ${this._type}   is barking!`);
+  const  = new Animal(`Cat`, `Black`);
+  console.log (`The ${this._type}   ${this.type} is meowing!`);
+
 
 // STEP 8.	Now, convert all of your properties to private properties. Then, create a private method called checkType(). In this method you will check to see what the type is. If it’s dog, return dog, otherwise, return cat. Then, create a privileged method called speak that returns the value of the checkType() method. The console window should now display “The <animal type> has made a noise!”
 

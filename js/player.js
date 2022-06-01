@@ -32,13 +32,15 @@ class Album {
 }
 
 var jbox = new Jukebox();
-const album1 = new Album('Operation Ivy', 'Energy');
-const album2 = new Album('Blink 182', 'Dude Ranch');
-const album3 = new Album('New Found Glory', 'Sticks and Stones');
+const album1 = new Album('Bo Burnham', 'Internet Song');
+const album2 = new Album('John Vanderslice', 'Bill Gates Song');
+const album3 = new Album('Talking Heads', 'Nothing But Song');
+const album4 = new Album('Radiohead', 'Android Song');
 
 jbox.addAlbum(album1);
 jbox.addAlbum(album2);
 jbox.addAlbum(album3);
+jbox.addAlbum(album4);
 
 album1.play();
 album2.play();
@@ -47,6 +49,10 @@ album2.play();
 album2.play();
 album2.play();
 album3.play();
+album4.play();
+album4.play();
+album4.play();
+album4.play();
 
 console.log(`Your favorite album is: ${jbox.favoriteAlbum()}`);
 

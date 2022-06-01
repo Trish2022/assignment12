@@ -51,8 +51,8 @@ album3.play();
 console.log(`Your favorite album is: ${jbox.favoriteAlbum()}`);
 
 
+// Your job in this assignment will be to do a minimal rewrite of the application that allows the user to pick an artist/album from a drop down menu on a web page and then click a play button to play the actual album. Every time the play button is clicked, you need to keep track of which albums are being played and how often. There should be a button on the screen that reads “Show my favorite album”. When the user clicks this button, it should show the user’s favorite album based on how many times it’s been played. When building the application, keep the following in mind:
 
-// In Lab 19 you created a music player application using object-oriented programming techniques. The downside to this application is that it was for the most part, static. Albums were added manually in code, albums were added to the player manually in code, and the albums were also played manually in code. Your job in this assignment will be to do a minimal rewrite of the application that allows the user to pick an artist/album from a drop down menu on a web page and then click a play button to play the actual album. Every time the play button is clicked, you need to keep track of which albums are being played and how often. There should be a button on the screen that reads “Show my favorite album”. When the user clicks this button, it should show the user’s favorite album based on how many times it’s been played. When building the application, keep the following in mind:
 // 1.	Store artists/albums within an array
 // 2.	Bind that array to the drop down menu on the web page
 // 3.	In code, iterate through the array and programmatically create new Album class instances based on each album within the array. You’ll also need to add these instances to the player.

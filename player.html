@@ -6,12 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 12 - The Music Player Application</title>
     <script src="js/player.js"></script>
+    <style>
+    h1 {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5em;
+        text-decoration: none;
+        color:rgb(105, 135, 180); 
+    }
+
+    li {
+        list-style-type: none;
+        padding: 10px;
+    }
+    button {
+        border: 1px solid rgb(203, 239, 243);
+        padding: 15px 30px;
+    }
+    a {
+        
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5em;
+        text-decoration: none;
+        color:rgb(139, 173, 225);
+    }
+
+    </style>
 </head>
 <body>
-    <h1>The Music Player</h1>
+    <h1>The Internet Music Player</h1>
     <!-- ADD DROP DOWN MENU -->
+    <ul>
+        <li><button type="button"><a href="https://youtu.be/k1BneeJTDcU">Internet Welcome Song</a></button></li>
+        <li><button type="button"><a href="https://youtu.be/Ll5alEXCJ_c">Bill Gates Song</a></button></li>
+        <li><button type="button"><a href="https://youtu.be/mVAxUMuhz98">Digital Song</a></button></li>
+        <li><button type="button"><a href="https://youtu.be/Lt8AfIeJOxw">Android Song</a></button></li>
+        <li><button type="button"><a href="https://youtu.be/q5-LAb75LpQ">Nothing But Song </a></button></li>
+    </ul>
     <!-- ADD PLAY BUTTON -->
+
     <!-- ADD SHOW FAVORITE ALBUM BUTTON -->
     <p id="favoriteAlbum"></p>
 </body>
 </html>
+
+<!-- allows the user to pick an artist/album from a drop down menu on a web page and then click a play button to play the actual album. -->

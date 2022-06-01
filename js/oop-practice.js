@@ -59,7 +59,7 @@ class Animal {
 
 // NEED TO WORK ON MORE
 
-const Dog = {color: 'tan', breed: 'terrier', height: 'short', length: 'long', species: 'dog'};
+const Dog = newDog{color: 'tan', breed: 'terrier', height: 'short', length: 'long', species: 'dog'};
 let txt = "";
 for (let x in Dog) {
   txt += Dog[x] + " ";
